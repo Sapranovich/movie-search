@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MoviceSearch</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="./js/style.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+    <div class="container1">
+      <div id="search"></div>
+      <div id="search-result"></div>
+      <div id="content"></div>
+    </div>
+    <footer id="footer"></footer>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      function openInfoFilm(ID){
+        sessionStorage.setItem('movieId', ID);
+        window.open('movie.html');
+        return false;
+      };
+    </script>
+  </body>
+</html>
