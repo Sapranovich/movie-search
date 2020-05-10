@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 function fetchDetails() {
-  const urlSearchMovie = `http://www.omdbapi.com/?apikey=10cd503f++&type=movie&i=${sessionStorage.getItem('movieId')}`;
+  const urlSearchMovie = `https://www.omdbapi.com/?apikey=10cd503f++&type=movie&i=${sessionStorage.getItem('movieId')}`;
   return fetch(urlSearchMovie).then((res) => res.json());
 }
 function renderPage(obj) {
