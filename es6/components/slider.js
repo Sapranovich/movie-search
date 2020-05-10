@@ -40,7 +40,7 @@ class Slider {
 
   static searchMovies(word, number) {
     document.getElementById('preloader').style.display = 'inline-block';
-    const urlSearchMovies = 'http://www.omdbapi.com/?apikey=10cd503f++&type=movie&s=';
+    const urlSearchMovies = 'https://www.omdbapi.com/?apikey=10cd503f++&type=movie&s=';
     return fetch(urlSearchMovies + word + `&page=${number}`)
       .then((res) => res.json())
       .then((json) => json.Search);
@@ -53,7 +53,7 @@ class Slider {
   }
 
   static fetchDetails(movie) {
-    const urlSearchMovie = 'http://www.omdbapi.com/?apikey=10cd503f++&type=movie&i=';
+    const urlSearchMovie = 'https://www.omdbapi.com/?apikey=10cd503f++&type=movie&i=';
     return fetch(urlSearchMovie + movie.imdbID).then((res) => res.json());
   }
 
