@@ -6,7 +6,7 @@ class HeaderFooter {
   render() {
     const header = document.getElementById('header');
     const footer = document.getElementById('footer'); 
-    header.innerHTML = `<a href="index.html">MovieSearch</a>`;
+    header.innerHTML = `<a href="#" class='home-page'>MovieSearch</a>`;
     footer.innerHTML = `
     <div class="container">
       <div class="footer-content">
