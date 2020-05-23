@@ -12,7 +12,6 @@ class HeaderFooter {
       <div class="footer-content">
         <a href="https://www.imdb.com/search/title/?count=100&groups=top_1000&sort=user_rating">IMDb "Top 1000"</a>
         <a href="https://www.rottentomatoes.com/top/bestofrt/">Best of Rotten Tomatoes</a>
-        <a href="https://github.com/Sapranovich">My GitHub</a>
       </div>
    </div>`;
   }
