@@ -4,14 +4,13 @@ function fetchDetails() {
   return fetch(urlSearchMovie).then((res) => res.json());
 }
 function renderPage(obj) {
-  console.log(obj);
   const html = `
    <div class="info-left">
    <div class="info-left-poster">
      <img src="${obj.Poster}" alt="No poster :((">
    </div>
    <div class="info-left-btn">
-     <a class = 'btn-videogallery' href="https://www.imdb.com/title/${obj.imdbID}/videogallery/">Go to gallery</a>
+     <a class = 'btn-videogallery' href="https://www.imdb.com/title/${obj.imdbID}/videogallery/" target="_blank">Go to gallery</a>
      <a class = 'btn-close' href=""  onclick="window.close()">Сlose</a>
    </div>
  </div>

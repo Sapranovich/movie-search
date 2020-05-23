@@ -19,7 +19,6 @@ class Slider {
       .then(ok=>Slider.mark(sessionStorage.getItem('NameFilm')))
       .then((ok) => Slider.settingsSlider())
       .catch((error) =>{
-        console.log(`No results were found for "${wordSearch}"`);
         document.getElementById('search-result').innerHTML = `No results were found for "${wordSearch}"`;
         document.getElementById('preloader').style.display = 'none';
       });
@@ -87,7 +86,7 @@ class Slider {
   <div class="slider-item-link"><a href="https://www.imdb.com/title/${movie.imdbID}/videogallery/">${movie.Title}</a></div>
   <img class="slider-item-poster" src="${movie.Poster}" alt="No poster">
   <a class ='btn-info' onclick="openInfoFilm('${movie.imdbID}')">Details</a>
-  <div class="slider-item-age">Age:${movie.Year}</div>
+  <div class="slider-item-age">Year:${movie.Year}</div>
   <div class="slider-item-rating" data = '${movie.imdbID}'>
       Rating:${movie.details.imdbRating}
   </div>     
